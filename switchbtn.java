@@ -20,6 +20,7 @@ public class switchbtn {
     break;
     default : System.out.println("STOP DREAMING");
     }
+    sc.close();
     }
 }
 // SWITCH STATEMENT MAI AGAR EK BAAR CONDITION TRUE HO JATA JAI

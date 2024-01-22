@@ -12,7 +12,9 @@ public class continuemsg {
     // check if a number is prime or not 
     System.out.print("Enter a number : ");
     int n = sc.nextInt();
-    boolean isPrime = true ;
+    if(n == 2 ){
+        System.out.println(n + " " + "is prime number");
+    }else{boolean isPrime = true ;
     for ( int i = 2 ; i <= n-1 ; i++){
         if (n % i == 0) {
             isPrime = false;
@@ -23,7 +25,8 @@ public class continuemsg {
         System.out.println(n + " " + " is PRIME number.");
     }else{
         System.out.println(n + " " + "is NOT a PRIME number.");
-    }
+    }}
+    
     sc.close();
     } 
 }

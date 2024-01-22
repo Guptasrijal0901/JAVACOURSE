@@ -20,6 +20,6 @@ public class breakstm {
     // System.out.println(n);
     // }while(true);
     // System.out.println("You have entered number which is multiple of 10");
-    
+    sc.close();
     }
 }

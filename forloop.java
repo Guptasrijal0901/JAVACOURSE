@@ -14,7 +14,7 @@ public class forloop {
     // for ( i = 1 ; i <= n ; i++){
     //     System.out.println("HELLO WORLD");
     // }
-    
+    sc.close();
     }
 }
 // DRY RUN : MTLAB APNE AAP CHECK KARNA KI KAISE PRINT HO RAHA 

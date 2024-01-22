@@ -14,6 +14,6 @@ public class sqrloop {
     //     line++;
     // }
     //TO PRINT REVERSE OS A NUMBER
-    
+    sc.close();
     }
 }

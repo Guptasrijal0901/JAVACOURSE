@@ -16,6 +16,7 @@ public class largest3no {
     // }
 
     // String type = (5%2 == 0)? "even" : "odd" ;
+    sc.close();
     }
 }
 

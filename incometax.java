@@ -17,5 +17,6 @@ public class incometax {
         tax = (int) (income*0.3);
         System.out.println(tax);
     }
+    sc.close();
     }
 }

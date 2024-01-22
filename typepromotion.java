@@ -21,6 +21,7 @@ public class typepromotion {
     double d = 79;
     double ans = a + b + c + d ;
     System.out.println(ans);
+    sc.close();
     // JO SABSE BADA TYPE KA DATA HOTA HAI USSI MAI FINAL ANSWER CONVERT HOTA HAI TAKI KOI DATA LOSS NAA HO 
     }
 }

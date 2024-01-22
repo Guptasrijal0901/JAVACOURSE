@@ -55,5 +55,6 @@ public class practice {
     // }else {
     //     System.out.println("It's not a leap year");
     // }
+    sc.close();
 }
 }

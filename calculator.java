@@ -23,5 +23,6 @@ public class calculator {
         break;
     }
     System.out.println("Thank You");
+    sc.close();
     }
 }

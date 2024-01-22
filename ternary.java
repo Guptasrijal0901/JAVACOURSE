@@ -9,7 +9,10 @@ public class ternary {
     int marks = sc.nextInt();
     String result = (marks>=33) ? "PASS" : "FAIL";
     System.out.println(result);
-    }
+
+    
 // TERNARY OPERTATOR 
 // SYNTAX :VARIABLE =  CONDITION?STATEMENT1:STATEMENT2
+sc.close();
+}
 }

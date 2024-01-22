@@ -12,5 +12,6 @@ public class typecasting {
     char ch = 'a';
     int number = ch ;
     System.out.println(number);
+    sc.close();
     } 
 }

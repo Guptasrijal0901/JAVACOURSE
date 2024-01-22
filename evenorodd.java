@@ -10,6 +10,7 @@ if ( A % 2 == 0){
 }else {
     System.err.println("A is odd number");
 }
+sc.close();
     }
 }
 

@@ -63,6 +63,6 @@ public class datatypes {
         // int e = a/b;
         // int f = a%b;
         // System.out.println(f);
-        // 
+        sc.close();
     }
 }

@@ -11,6 +11,6 @@ public class largervalue {
     }else {
         System.out.println("A is smaller than B");
     }
-
+    sc.close();
     }
 }

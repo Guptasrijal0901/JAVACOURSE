@@ -36,7 +36,7 @@ public class loops {
     //     i++;
     // }
     // System.out.println(sum);
-    
+    sc.close();
     }
 } 
 

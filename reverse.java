@@ -11,6 +11,7 @@ public class reverse {
     //    System.out.print(lastdigit + " ");
     //    n = n/10; // n/10
     // }
+    sc.close();
     }
 }
 // FOR THIS WE USE %

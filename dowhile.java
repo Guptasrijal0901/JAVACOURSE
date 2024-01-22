@@ -8,6 +8,7 @@ public class dowhile {
         System.out.println("HELLO WORLD");
         count++;
     } while (count <= 10 );
+    sc.close();
     }
 }
 // ESME PHELE HM KAAM KARTE HAI FIR CONDITION CHECK KARTE HAI 
