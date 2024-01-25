@@ -27,3 +27,5 @@ public class swap {
     sc.close();
     }
 }
+// java always calls by value 
+// hmesha copy value aati hai 
