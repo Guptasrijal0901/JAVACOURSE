@@ -30,7 +30,7 @@ public class function {
         sc.close();
     }
 }
-// SYNTAX 
+// SYNTAX  
 // RETURNTYPE NAME (){
 //     BODY STATEMENT; 
 // }
@@ -43,3 +43,4 @@ public class function {
 // there are two type of parameters 
 // 1. formal parameters/ parameters : during the definition of function 
 // 2. actual parameters/ arguments : during call of function 
+// function li memory call stack mai save hoti h 
