@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class decimaTObinary {
 
 public static void decTObin (int n){
-     int myNum  = n ;
+    int myNum  = n ;
     int remainder ;
     int pow = 0 ;
     int binNum = 0 ;
