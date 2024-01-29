@@ -15,8 +15,7 @@ public class pyramid {
             }
             System.out.println();
     }
-    }
-        
+    }   
     public static void main (String arg[]){
     Scanner sc = new Scanner(System.in);
     sc.close();
