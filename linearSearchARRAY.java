@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class linearSearchARRAY {
+
     public static void birthday(int day[], int key ){
         boolean found = false; // to check true or false 
         for (int i = 0 ; i < day.length ; i++){
@@ -13,8 +14,7 @@ public class linearSearchARRAY {
         if (!found) {
         System.out.println("NOT FOUND ");
         }
-        }
-        
+        }  
     public static void main (String arg[]){
       
     Scanner sc = new Scanner(System.in);
