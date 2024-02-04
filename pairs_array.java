@@ -20,3 +20,4 @@ public class pairs_array {
     sc.close();
     }
 }
+// TC: O(n2)
