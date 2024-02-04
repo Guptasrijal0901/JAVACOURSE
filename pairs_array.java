@@ -11,7 +11,7 @@ public class pairs_array {
            }System.out.println();
         }
         int total_pairs = (m*(m-1))/2;
-        System.out.print("Total number of pairs we get is :"+total_pairs);
+        System.out.println("Total number of pairs we get is :"+total_pairs);
     }
     public static void main (String arg[]){
     Scanner sc = new Scanner(System.in);
