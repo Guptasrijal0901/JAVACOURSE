@@ -1,7 +1,6 @@
 import java.util.Scanner;
-
 public class kadanes_algo {
-    public static void kardane(int array[]){
+public static void kardane(int array[]){
         int current_sum = 0 ;
         int maximum_sum = Integer.MIN_VALUE;
         int minimum_Element = Integer.MIN_VALUE;
@@ -18,7 +17,7 @@ public class kadanes_algo {
                 System.out.println("All elements are negative. Minimum element is: " + minimum_Element);
             }else{
                 System.out.println("Maximum sum is: " + maximum_sum);
-            }
+        }
     }
     public static void main (String arg[]){
     Scanner sc = new Scanner(System.in);
