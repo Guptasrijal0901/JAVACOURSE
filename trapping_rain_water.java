@@ -6,3 +6,4 @@ public class trapping_rain_water {
     sc.close();
     }
 }
+// ek auxillary array banta hai jisme ek left max boundary or right max boundary 
