@@ -33,3 +33,4 @@ public static int trappedwater(int height[]){
     }
 }
 // ek auxillary array banta hai jisme ek left max boundary or right max boundary 
+// TC of this code is O(n) which is liner time to complete and this is more efficient 
