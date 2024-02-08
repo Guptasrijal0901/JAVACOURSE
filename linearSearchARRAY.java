@@ -25,4 +25,4 @@ public class linearSearchARRAY {
     }
 }
 // like in menu we search for somthing particular in sequence wise this is linear search 
-// in lenear search we find the index number of the given value to find 
+// in linear search we find the index number of the given value to find 
