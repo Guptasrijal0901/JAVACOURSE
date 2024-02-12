@@ -15,7 +15,7 @@ for(int i = 0 ; i < n ; i++){ // yaha pe turns count kiye hai
     // yaha pe hmne minimum value ko hmne apne current position ko swap kar diya hai 
     int temp = array[minPOS];
     array[minPOS] = array[i];
-    array[i] = temp;
+    array[i] = temp; 
 }
 }
 public static void printarray(int array[]){
@@ -38,3 +38,4 @@ public static void printarray(int array[]){
 // ESME SARE ELEMENT MAI SE SMALLEST NIKAL LETE HAI OR USKO AAGE PLACE KAR DETE HAI 
 // FIR REST ELEMENT KO COMPARE KARTE HAI OR USME SE SABSE CHOOTE KO AAGE PLACE KAR DETE HAI 
 // ESME BUBBLE KI TRAH HAMESHA SWAP KAENE KI ZARURAT NHI HAI 
+// TC eski bhi O(n2) hai jo ki itna acha nhi hai 
