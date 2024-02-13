@@ -12,3 +12,4 @@ public class counting_sort {
 // new array mai haar number ki frequency likhenge 
 // uske baad purane array mai frequency k hisab se lumber dalenge 
 // or ek ek kar k frequency ko reduce bhi karte rahenge 
+// TC 
