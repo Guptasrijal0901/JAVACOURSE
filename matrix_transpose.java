@@ -21,7 +21,8 @@ public class matrix_transpose {
             for (int j = 0; j < matrix[i].length; j++) {
                 System.out.print(matrix[i][j] + " ");
             }
-            System.out.println(); // Move to the next line after printing each row
+            System.out.println(); 
+            // Move to the next line after printing each row
         }
     }
     public static void main (String arg[]){
