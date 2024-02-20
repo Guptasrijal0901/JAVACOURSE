@@ -34,3 +34,8 @@ public class string_storage {
 // it means that once it's created, you can't change its contents. 
 // If you want to modify it, you have to create a new string with the desired changes. 
 // This is because strings are treated as fixed and unchangeable in memory.
+
+// aise hi hm jab loop chalate hai a se z tk kisi value mai add karte hai toh 
+// haar baar new value create hota hai jisse TC of code bhut increase ho jata hai 
+// esse ko overcome karne k liye hm string builder use karte hai 
+// esme unlike of string hm ek hi value bana dete hai or ussi mai changes karte hai jisse hmhara TC kaam hota hai 
