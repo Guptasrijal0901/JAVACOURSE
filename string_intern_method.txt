@@ -1,0 +1,30 @@
+In Java, the `intern()` method is used to place a String object into the pool of strings, 
+known as the "string pool". 
+
+Here's a simple explanation:
+
+- When you create a String object using double quotes (e.g., `"hello"`), 
+Java checks if that exact string already exists in the string pool.
+- If it does, Java returns a reference to that existing string from the pool.
+- If it doesn't exist, Java adds the string to the pool and returns its reference.
+- The `intern()` method allows you to explicitly place a String object into the string pool, 
+if it's not already there, and returns a reference to the pooled instance.
+
+Here's an example:
+
+```java
+String str1 = "hello"; // This string goes into the string pool
+String str2 = new String("hello").intern(); // This string also goes into the string pool
+String str3 = "hello"; // This string gets the reference from the string pool
+
+System.out.println(str1 == str2); // Output: true, 
+because both strings are now referencing the same string in the pool
+System.out.println(str1 == str3); // Output: true, 
+because both strings are referencing the same string in the pool
+```
+
+In this example, `str2` is explicitly interned using the `intern()` method, 
+making it reference the same string in the string pool as `str1`. 
+So, `str1 == str2` returns `true`. 
+Similarly, `str3` references the same string in the pool as `str1`, 
+so `str1 == str3` also returns `true`.
