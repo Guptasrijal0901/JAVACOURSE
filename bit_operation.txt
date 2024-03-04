@@ -1,0 +1,40 @@
+In Java, when we talk about the "ith bit," we're referring to a specific bit within a binary representation of a number. Let's break it down:
+
+1. **Binary Representation**: In Java (and in computers in general), 
+numbers are stored in binary, which means they're represented using only two digits: 0 and 1. 
+For example, the number 5 is represented as 101 in binary, and 9 is represented as 1001.
+
+2. **Indexing Bits**: Each digit in a binary number has a position, 
+and we can refer to these positions using indices. The rightmost digit is the 0th bit, 
+the next one is the 1st bit, then the 2nd, and so on. For example, in the binary number 101, the 0th bit is 1, 
+the 1st bit is 0, and the 2nd bit is 1.
+
+3. **Accessing the "ith" Bit**: When we say the "ith" bit, we mean the bit at the position represented by the index i. 
+So, if i is 0, we're referring to the rightmost bit; if i is 1, we're referring to the next bit to the left, and so on.
+
+Here's a simple example in Java code:
+
+```java
+// Function to get the ith bit of a number
+static int getIthBit(int num, int i) {
+    // Shifting the 1st bit of num i positions to the right
+    // This isolates the ith bit
+    int mask = 1 << i;
+    // Performing bitwise AND operation with num
+    // This sets all bits to 0 except the ith bit
+    int result = num & mask;
+    // If result is 0, the ith bit is 0; otherwise, it's 1
+    return (result == 0) ? 0 : 1;
+}
+
+public static void main(String[] args) {
+    int number = 9; // Binary representation: 1001
+    int ith = 2;    // We want to find the 2nd bit (0-indexed)
+    System.out.println("The " + ith + "th bit of " + number + " is: " + getIthBit(number, ith));
+}
+```
+
+In this example, 
+we have a function `getIthBit` that takes a number and an index as input and returns the value of the bit at that index. 
+In the `main` method, we call this function with `number = 9` (binary 1001) and `ith = 2`, 
+asking for the value of the 2nd bit (0-indexed), which is 0.
