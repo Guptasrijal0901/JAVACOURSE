@@ -7,7 +7,7 @@ For example, a car, a dog, or a person can all be objects. In Java, objects are 
 They define the properties (attributes) and behaviors (methods) that objects of that class can have. 
 For instance, a Car class might have attributes like color, model, and speed, and behaviors like accelerate and brake.
 
-3. **Encapsulation**: Encapsulation means bundling the data (attributes) and methods (behaviors) 
+3. **Encapsulation**: Encapsulation means bundling the data (attributes) and methods/functions (behaviors) 
 that operate on the data together in a single unit, which is a class. It helps in data hiding and abstraction, 
 which means hiding the internal details of how an object works and only exposing the necessary parts.
 
