@@ -1,0 +1,25 @@
+Access modifiers in Java are keywords that specify the 
+accessibility or visibility of classes, 
+methods, and variables within a program. 
+There are four main types of access modifiers:
+
+1. **Public**: This is the least restrictive access modifier.
+Public members can be accessed from any other class, 
+regardless of where it is located.
+
+2. **Protected**: 
+Protected members are accessible within the same package and subclasses 
+(even if they are in different packages). 
+It's a bit more restricted than public.
+
+3. **Default (no modifier)**: If no access modifier is specified, 
+it is considered to have default access. 
+Default members are accessible only within the same package.
+
+4. **Private**: This is the most restrictive access modifier.
+Private members can only be accessed within the same class.
+
+In short, access modifiers control the visibility of classes, 
+methods, and variables, helping to enforce encapsulation and 
+maintain the integrity of the code by restricting 
+access to certain parts of the program.
