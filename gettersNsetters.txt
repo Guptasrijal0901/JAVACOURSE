@@ -1,0 +1,29 @@
+In Java, getters and setters are methods used to access 
+and modify the private fields (variables) 
+of a class from outside the class. 
+
+- Getters (also known as accessor methods) 
+are used to retrieve the value of a private field.
+- Setters (also known as mutator methods) 
+are used to modify the value of a private field.
+
+Here's a simple example:
+
+public class Person {
+    private String name;
+
+    // Getter method
+    public String getName() {
+        return name;
+    }
+
+    // Setter method
+    public void setName(String newName) {
+        this.name = newName;
+    }
+}
+
+In this example, `getName()` is a getter method that retrieves the value of the 
+`name` field, and `setName(String newName)` is a setter method that modifies the 
+value of the `name` field. Using getters and setters allows for better control over 
+access to the fields of a class and facilitates encapsulation in object-oriented programming.

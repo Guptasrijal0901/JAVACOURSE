@@ -7,6 +7,11 @@ public class OOPS {
         System.out.println(p1.tip);
         p1.setColor("Yellow");
         System.out.println(p1.color);
+
+        BankAccount myAccount = new BankAccount();
+        myAccount.username = "srijal";
+        //myAccount.password = ""; is not visible 
+        
     }
 }
 // 1.
@@ -42,3 +47,10 @@ class Student {
     }
 }
 // 3.
+class BankAccount {
+    public String username;
+    private String password;
+    public void setpassword (String pswd){
+    password = pswd;
+    }
+}

@@ -1,0 +1,13 @@
+Encapsulation in Java, in simple terms, 
+is the idea of bundling data (variables) and 
+methods (functions) that operate on the data into a single unit, called a class. 
+
+It's like putting things in a box: you have your data (like variables) 
+and the operations on that data (like methods), 
+and you keep them together within the class. 
+This helps in hiding the internal state of an object from the outside world 
+and only exposing the necessary functionalities.
+
+In essence, encapsulation helps in achieving data abstraction, 
+data hiding, and modularity, making your code more organized, 
+maintainable, and secure.

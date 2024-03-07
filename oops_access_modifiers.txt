@@ -1,4 +1,4 @@
-Access modifiers in Java are keywords that specify the 
+Access modifiers/specifiers in Java are keywords that specify the 
 accessibility or visibility of classes, 
 methods, and variables within a program. 
 There are four main types of access modifiers:
