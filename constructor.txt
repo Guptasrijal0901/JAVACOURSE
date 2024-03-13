@@ -46,3 +46,42 @@ and it sets up the `myCar` object with those values.
 -> constructors dont't have return type (not even void)
 -> constructors are only called once, at object creation 
 -> memory allocation happens when constructor is called 
+
+types of constructors
+-> non parameterized
+-> parameterized 
+-> copy constructor
+
+
+1. **Non-parameterized Constructor**: This is like setting up a default state for something. 
+Imagine you're building a house, and before you add any customizations,
+you have a basic blueprint. The non-parameterized constructor sets up the object 
+with default values or initializes it in a basic way without needing any specific information.
+
+student(){
+    sout("constructor is called)
+}
+
+2. **Parameterized Constructor**: Think of this like customizing your order. 
+If you want your house to have specific features like a swimming pool, 
+a garden, or a particular color, you'd specify those details. 
+Similarly, a parameterized constructor allows you to initialize an object with 
+specific values or configurations by passing parameters when you create an instance of the class.
+
+student( string name ){
+    this.name = name;
+    sout("constructor is called)
+}
+
+3. **Copy Constructor**: Imagine you have a blueprint of a house, 
+and you want to build another house exactly like it. 
+A copy constructor does just that - it creates a new object by copying the values 
+from an existing object. It's like making a duplicate with the same specifications.
+
+
+
+In essence:
+
+- Non-parameterized constructor: Default setup.
+- Parameterized constructor: Customized setup.
+- Copy constructor: Makes a duplicate with the same specifications as an existing object.

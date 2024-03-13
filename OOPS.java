@@ -49,6 +49,7 @@ class Student {
 // 3.
 class BankAccount {
     public String username;
+    @SuppressWarnings("unused")
     private String password;
     public void setpassword (String pswd){
     password = pswd;

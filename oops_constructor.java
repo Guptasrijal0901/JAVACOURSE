@@ -1,6 +1,7 @@
 public class oops_constructor {
     public static void main(String[] args) {
-        student s1 = new student("Srijal Gupta");
+        student s1 = new student("Srijal Gupta"); 
+        // yah ape hm naya student object bana rahe hai constructor ki help se 
         System.out.println(s1.name);
     }
 }
@@ -12,6 +13,8 @@ class student {
     // this is constructor
     student( String name ){  
         this.name = name;
-        System.out.println("Constructor is called");
+        System.out.println("Constructor is called....");
     }
 }
+// constructor khud se baan jata hai jab hm new word use karte hai lekin 
+// esme koi initilization nhi hota hai 
