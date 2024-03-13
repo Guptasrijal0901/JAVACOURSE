@@ -42,3 +42,7 @@ Car myCar = new Car("Toyota", "Corolla", 2020);
 
 The constructor is automatically called with the values `"Toyota"`, `"Corolla"`, and `2020`, 
 and it sets up the `myCar` object with those values.
+-> constructors have the same name as class or structure 
+-> constructors dont't have return type (not even void)
+-> constructors are only called once, at object creation 
+-> memory allocation happens when constructor is called 
