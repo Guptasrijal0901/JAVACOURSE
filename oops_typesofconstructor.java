@@ -13,8 +13,13 @@ public class oops_typesofconstructor {
         s1.marks[1] = 90;
         s1.marks[2] = 95;
 
-        Student s2 =  new Student(s1);
+        Student s2 =  new Student(s1); // yaha pe hmne copy kari hai s1 ki values s2 k andar 
         s2.password = "xyz";
+        s2.marks[2] = 99;
+// esme hmne copy kar liya lekin value change kar di toh vo change ho gya 
+        for(int i = 0 ; i < 3 ; i++){
+        System.out.println(s2.marks[i]);
+        }
     }
 }
 class Student {
@@ -30,6 +35,10 @@ class Student {
         marks = new int [3];
         this.name = s1.name;
         this.roll = s1.roll;
+        // Copying marks from s1 to s2
+        for (int i = 0; i < 3; i++) {
+            this.marks[i] = s1.marks[i];
+        }
     }
 
     Student(){

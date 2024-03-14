@@ -1,0 +1,35 @@
+In Java, when you're working with objects, 
+you often need to copy them. 
+But not all copies are created equal! 
+There are two main types of copying: 
+shallow copy and deep copy.
+
+1. **Shallow Copy**:
+   - Imagine you have a box, and inside that box, 
+   there are some smaller boxes (objects). 
+   When you make a shallow copy, you're basically making a new big box, 
+   but you're not copying the smaller boxes inside. 
+   Instead, you just put references (pointers) to the same smaller boxes that were 
+   in the original big box. So, both the original big box and the new big box point to the same smaller boxes.
+   - In Java, this means copying an object but not its contained objects. 
+   So, if you change something inside one of the smaller boxes in the original big box, 
+   you'll see that change in the copied big box too because they're 
+   both pointing to the same smaller boxes.
+   -> changes reflect
+
+
+2. **Deep Copy**:
+   - Now, let's say you want to make a true, independent copy. 
+   You want a new big box, and inside that big box, 
+   you want to put new smaller boxes that are exact copies of the ones in the original big box. 
+   This way, if you change something in one of the smaller boxes in the original big box, 
+   it won't affect the copied big box because they're totally separate.
+   - In Java, this means copying an object and also creating new copies of all the objects it contains. 
+   So, even if you change something in one of the contained objects in the original object, 
+   the copied object remains unaffected because it has its own separate copies of the contained objects.
+   -> changes does not reflect
+
+In summary, a shallow copy just copies the references to the contained objects, 
+while a deep copy creates new copies of the contained objects themselves. Depending on your needs, 
+you'll choose between shallow and deep copy to make sure you're getting the behavior 
+you want when working with copies of objects in Java.
