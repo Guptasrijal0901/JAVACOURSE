@@ -85,3 +85,18 @@ In essence:
 - Non-parameterized constructor: Default setup.
 - Parameterized constructor: Customized setup.
 - Copy constructor: Makes a duplicate with the same specifications as an existing object.
+
+Constructor overloading: 
+Constructor overloading in Java is when you have multiple constructors within a class, 
+each with a different set of parameters. 
+This means you can create objects of the class using different sets of initial values. 
+It's like having multiple doors to enter a room, each door requiring a different key. 
+Depending on which key you have, you enter the room with different starting conditions. 
+Similarly, with constructor overloading, you can create objects with different 
+initial states based on the parameters you provide when creating them.
+
+in simple words: 
+hmne bhut sare constructors bana diye hai sab mai alag alag arguments hai 
+program dekh leta hai ki usse kon sa constructor call karna hai usi ko call kar le raha hai 
+essi ko constructor over loading bolte hai 
+this is an example of polymorphism  
