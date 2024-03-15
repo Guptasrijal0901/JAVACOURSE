@@ -9,7 +9,7 @@ public class oops_shallow_deep_copy {
         Student deepCopyStudent = originalStudent.deepCopy();
 
         // Modifying originalStudent to demonstrate shallow copy
-        originalStudent.setName("Alice");
+        // originalStudent.setName("Alice");
 
         // Displaying details of all students
         System.out.println("Original Student: " + originalStudent);
@@ -62,6 +62,8 @@ class Student {
         // Create a new instance of Student and copy values
         return new Student(this.name, this.age, this.roll);
     }
+    // Override toString method for better representation
+    @Override
     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
