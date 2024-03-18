@@ -37,11 +37,11 @@ class Student {
     void setage ( int setage){
         age = setage;
     }
-
+// enn sab function se hm properties ko update kar sakte hai when we required 
     void setpercentage ( float setpercentage){
         percentage = setpercentage;
     }
-
+// fUnction to calculate pecentage
     void calpercentage (int math, int phy, int chem){
         percentage = (math + phy + chem)/3;
     }
