@@ -1,6 +1,7 @@
 public class OOPS {
     public static void main ( String args[]){
-        Pen p1 = new Pen(); // we have created a Pen object called p1
+        Pen p1 = new Pen(); 
+// we have created a Pen object called p1
         p1.setColor("Blue");
         System.out.println(p1.color);
         p1.setTip(5);
@@ -9,11 +10,14 @@ public class OOPS {
         System.out.println(p1.color);
 
         BankAccount myAccount = new BankAccount();
-        myAccount.username = "srijal";
+        myAccount.username = "Srijal";
+        System.out.println(myAccount.username);
         //myAccount.password = ""; is not visible 
         
     }
 }
+// yeh sab public classes nhi hai jisse hm public class k baad banate hai 
+// wrna public class mai object define karne mai difficulty aayegi 
 // 1.
 class Pen{
     String color;
