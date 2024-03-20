@@ -1,6 +1,7 @@
 Encapsulation in Java, in simple terms, 
 is the idea of bundling data (variables) and 
-methods (functions) that operate on the data into a single unit, called a class. 
+methods (functions) that operate on the data into a single unit, 
+called a class. 
 
 It's like putting things in a box: you have your data (like variables) 
 and the operations on that data (like methods), 

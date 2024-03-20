@@ -1,7 +1,7 @@
 public class oops_constructor {
     public static void main(String[] args) {
         student s1 = new student("Srijal Gupta"); 
-        // yah ape hm naya student object bana rahe hai constructor ki help se 
+// yah ape hm naya student object bana rahe hai constructor ki help se 
         System.out.println(s1.name);
     }
 }
@@ -11,8 +11,8 @@ class student {
     int roll ;
 
     // this is constructor
-    student( String name ){  
-        this.name = name;
+    student( String Sname ){  
+        this.name = Sname;
         System.out.println("Constructor is called....");
     }
 }
