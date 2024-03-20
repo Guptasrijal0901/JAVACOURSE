@@ -13,7 +13,8 @@ public class oops_typesofconstructor {
         s1.marks[1] = 90;
         s1.marks[2] = 95;
 
-        Student s2 =  new Student(s1); // yaha pe hmne copy kari hai s1 ki values s2 k andar 
+        Student s2 =  new Student(s1); 
+// yaha pe hmne copy kari hai s1 ki values s2 k andar 
         s2.password = "xyz";
         s2.marks[2] = 99;
 // esme hmne copy kar liya lekin value change kar di toh vo change ho gya 
