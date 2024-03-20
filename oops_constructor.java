@@ -11,8 +11,8 @@ class student {
     int roll ;
 
     // this is constructor
-    student( String Sname ){  
-        this.name = Sname;
+    student( String S_name ){  
+        this.name = S_name;
         System.out.println("Constructor is called....");
     }
 }
