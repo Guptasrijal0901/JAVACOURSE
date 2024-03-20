@@ -28,3 +28,7 @@ class Pen{
     }
 }
 // this keyword is used to refer to the current object 
+// esme kya hota hai 
+// private properties bante hai toh usse accses karne k liye getters and setters ki use karte hai function k form mai 
+// get: to return the value 
+// set: to modify the value 
