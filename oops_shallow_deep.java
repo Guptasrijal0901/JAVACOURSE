@@ -43,10 +43,9 @@ class Data{
       this.age = d1.age;
       this.name = d1.name;  
       for (int i = 0 ; i < marks.length ; i++){
-      this.marks[i] = s1.marks[i];
+      this.marks[i] = d1.marks[i];
       }
     }
-
     Data (){
         System.out.println("Constructor is called...");
     }
