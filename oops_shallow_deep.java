@@ -18,7 +18,7 @@ public class oops_shallow_deep {
     System.out.println("Age: " + d1.age);
     System.out.println("Course: " + d1.course);
     for (int i = 0 ; i < 3  ; i++){
-        System.out.println("Marks "+ i +" : "+ d1.marks[i]);
+        System.out.println("Marks "+ i +" : "+ d2.marks[i]);
     }
     }
 }
@@ -35,7 +35,6 @@ class Data{
     //     this.course = d1.course;
     //     
     // }
-
     // deep copy constructor
     Data (Data d1){
       marks = new double[3];

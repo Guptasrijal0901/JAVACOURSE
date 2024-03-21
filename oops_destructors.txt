@@ -1,0 +1,11 @@
+//In Java, we don't write destructors (or finalizers) directly because 
+//Java's automatic garbage collection system takes care of memory management for us. 
+
+//The garbage collector automatically cleans up objects that are no longer being used, 
+//reclaiming their memory. This removes the need for explicit destructors like 
+//in some other programming languages. 
+
+//This approach simplifies memory management and helps prevent issues like memory leaks 
+//or dangling pointers, making Java programs more reliable and easier to maintain. 
+//So, we don't write destructors in Java because 
+//the language handles memory cleanup automatically.
