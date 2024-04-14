@@ -16,4 +16,6 @@ public class rec_print_n {
         printDec(n);
     }
 }
-// call stack : jaise jaise function call ho rahi vaise vaise stack banta hai usse call stack bolte hai 
+// call stack: jaise jaise function call ho rahi vaise vaise stack banta hai usse call stack bolte hai 
+// stack overflow: 1. too many parameter memory 2. too many function calls
+// jab base case hata denge toh hmhare pass stack overflow ho jayega 
