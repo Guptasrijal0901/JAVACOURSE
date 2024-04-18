@@ -14,7 +14,7 @@ public class rec_print_n {
     public static void main(String[] args) {
         int n = 10 ;
         printDec(n);
-    }
+    } 
 }
 // call stack: jaise jaise function call ho rahi vaise vaise stack banta hai usse call stack bolte hai 
 // stack overflow: 1. too many parameter memory 2. too many function calls
