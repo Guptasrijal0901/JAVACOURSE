@@ -15,3 +15,6 @@ public class rec_factorial {
         System.out.println(printFactorial(n));;
     }
 }
+// TC is O(n)
+// SC is not constant because jab call stack call hoga toh duplicate memory banega 
+// therefore SC is O(n)
