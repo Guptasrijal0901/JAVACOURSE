@@ -4,7 +4,7 @@ public class rec_print_inc_n {
             System.out.print(1 + " ");
             return;
         }
-        printInc(n-1);
+        printInc(n-1);  
         System.out.print(n + " ");
     }
     public static void main(String[] args) {
