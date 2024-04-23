@@ -65,3 +65,7 @@ public class rec_n_sum {
 // This analysis demonstrates how the function builds up the sum recursively, 
 // descending to the base case (n == 1) 
 // and then adding the values back up as the recursion unwinds.
+
+
+// TC is O(n)
+// SC is O(n)
