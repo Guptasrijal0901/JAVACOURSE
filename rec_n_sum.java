@@ -8,7 +8,7 @@ public class rec_n_sum {
         return sum ; 
     }
     public static void main(String[] args) {
-        int n = 2;
+        int n = 8;
         System.out.println( nSum(n));;
     }
 }
