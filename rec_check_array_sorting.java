@@ -52,3 +52,6 @@ public class rec_check_array_sorting {
 // // 10. `System.out.println(sortArray(arr, 0));`: This line calls the `sortArray`
 //  method with the array `arr` and starting index `0`. It prints the boolean result 
 //  returned by the `sortArray` method, indicating whether the array is sorted or not.
+
+// TC: O(n)
+// SC: O(n)
