@@ -1,13 +1,20 @@
 public class rec_friends_pairing {
 
     public static int pairCount(int n){
-        if (n == 1 || n == 0) {
-            return 1;
+        if (n == 1 || n == 2) {
+            return n;
         }
-        int count1 = pairCount(n-1);
-        int count2 = pairCount(n-2);
-        int totalCount = count1 + (n-1) * count2;
-        return totalCount;
+//         // single
+//         int count1 = pairCount(n-1);
+//         // pair 
+//         int count2 = pairCount(n-2);
+//         int pairWays = (n-1)*count2;
+//         // total ways 
+//         int totalCount = count1 + pairWays;
+// // dusre n-2 count k pass n-1 choices hai pair banane k liye 
+//         return totalCount;
+
+           return pairCount(n-1) + (n-1)*pairCount(n-2);
     }
     public static void main(String[] args) {
         int n = 4;
