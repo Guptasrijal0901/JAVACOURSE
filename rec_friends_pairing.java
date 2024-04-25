@@ -14,6 +14,7 @@ public class rec_friends_pairing {
 // // dusre n-2 count k pass n-1 choices hai pair banane k liye 
 //         return totalCount;
 
+// one line code 
            return pairCount(n-1) + (n-1)*pairCount(n-2);
     }
     public static void main(String[] args) {
