@@ -23,10 +23,22 @@ public class rec_babbar {
         return fibonacci(n-1) + fibonacci(n-2);
 // yaha pe hm plus ker rahe hai last 2 number k 1 le nhi sakte value hi nhi milegi 
     }
-    public static 
+    static String Digit[] = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+    public static void printSpelling(int n){
+        
+        if(n == 0){
+            return ;
+        }
+        int lastDigit = n%10;
+        int restDigit = n/10;
+        printSpelling(restDigit); // sidha print hoga 
+        System.out.print(Digit[lastDigit] + " ");
+        // printSpelling(restDigit); // ulta print hoga
+    }
     public static void main(String[] args) {
         // countPrint(9);
         // System.out.println(factorial(5));
         // System.out.println(fibonacci(9));
+        printSpelling(2001);
     }
 }
