@@ -9,3 +9,5 @@ public class dnc_rorated_sorted {
 // arr = {4, 5, 6, 7, 0, 1, 2}
 // target: 0
 // output: 4
+// we can do this with linear(O(n)) search too but to get nlogn we can use divide and conqure 
+// approach: modified search
