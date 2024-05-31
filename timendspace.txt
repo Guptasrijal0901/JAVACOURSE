@@ -1,0 +1,31 @@
+Sure, I'll explain time and space complexity in Java using simple terms.
+
+Time Complexity:
+Time complexity refers to how long it takes for a program or a specific part of the code (like a function or algorithm) to run. 
+It measures how the running time of the code scales with the size of the input data.
+
+For example, if you have a function that prints out each element of an array, 
+it will take longer to execute if the array has 1,000 elements compared to an array with 10 elements. 
+The time complexity of this function is directly proportional to the size of the input array.
+
+Space Complexity:
+Space complexity refers to how much memory (RAM) a program or a specific part of the code requires to execute. 
+It measures how the amount of memory needed scales with the size of the input data.
+
+For example, if you have a function that creates a new array with the same size as the input array, 
+the space complexity of this function is directly proportional 
+to the size of the input array because it needs to allocate memory for the new array.
+
+In Java, time and space complexity are often expressed using Big O notation, 
+which provides an upper bound on the growth rate of the running time or memory usage as the input size increases.
+
+Here are some common time and space complexities:
+
+1. Constant Time (O(1)): The running time or memory usage is constant, regardless of the input size.
+2. Linear Time (O(n)): The running time or memory usage grows in direct proportion to the input size (n).
+3. Quadratic Time (O(n^2)): The running time or memory usage grows quadratically with the input size.
+4. Logarithmic Time (O(log n)): The running time or memory usage grows logarithmically with the input size.
+5. Exponential Time (O(2^n)): The running time or memory usage grows exponentially with the input size.
+
+In general, you want to optimize your code to have the best possible time and space complexities 
+because it directly impacts the performance and scalability of your program, especially when dealing with large input sizes.
