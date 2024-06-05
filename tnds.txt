@@ -87,8 +87,6 @@ Here are the common time complexities in Java along with examples:
          }
          return fibonacci(n - 1) + fibonacci(n - 2);
      }
-     ```
-
 These are some of the common time complexities in Java. 
 It's important to analyze the time complexity of algorithms 
 to understand their performance characteristics and choose the 
