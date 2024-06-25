@@ -25,12 +25,14 @@ public class timendspace {
 // Examples include iterating through an array to find a specific element or counting the occurrences of a value in a list.
 
 // 4. **O(n log n) - Linearithmic Time Complexity:**
-//    - This complexity often arises from algorithms that divide the problem into smaller subproblems and then combine the results. 
+//    - This complexity often arises from algorithms that divide the problem 
+// into smaller subproblems and then combine the results. 
 // Examples include efficient sorting algorithms like Merge Sort and Heap Sort.
 
 // 5. **O(n^2) - Quadratic Time Complexity:**
 //    - Algorithms with quadratic time complexity have a runtime proportional to the square of the size of the input. 
-// Examples include nested loops where each loop runs up to the size of the input, like bubble sort or simple nested iterations over a 2D array.
+// Examples include nested loops where each loop runs up to the size of the input,
+//  like bubble sort or simple nested iterations over a 2D array.
 
 // 6. **O(n^3) - Cubic Time Complexity:**
 //    - Algorithms with cubic time complexity have a runtime proportional to the cube of the size of the input. 
