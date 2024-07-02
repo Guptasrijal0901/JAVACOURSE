@@ -1,13 +1,13 @@
 public class spacecomplexity {
     
 }
-// Space complexity in Java (or any programming language) is about 
-//how much memory a program uses while it runs. 
+// Space complexity(input space + auxillary space(temporay array like we do in swapping of array)) 
+// in Java (or any programming language) is about how much memory a program uses while it runs. 
 
 // Think of it like packing a suitcase:
 
 // - **Variables**: Each item you pack takes up some space in your 
-//suitcase. In your program, each variable (like `int`, `double`, or `String`) takes up some memory.
+// suitcase. In your program, each variable (like `int`, `double`, or `String`) takes up some memory.
 // - **Data Structures**: If you pack a box inside your suitcase, 
 // it can hold multiple items but takes up space itself. 
 // Similarly, data structures like arrays, lists, and maps hold multiple values and take up memory.
