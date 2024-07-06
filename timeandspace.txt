@@ -1,0 +1,126 @@
+Understanding the time and space complexity of code is crucial for evaluating 
+its efficiency. In Java, as with other programming languages, different algorithms 
+and data structures exhibit different performance characteristics. 
+Here’s a simplified explanation of common time and space complexities:
+
+### Time Complexity
+Time complexity measures the amount of time an algorithm takes to run as a 
+function of the size of its input (n).
+
+1. **O(1) - Constant Time**
+   - **Description**: The algorithm takes the same amount of time regardless 
+   of the input size.
+   - **Example**: Accessing an element in an array by index.
+   - **Details**: No matter how large the array is, accessing any element is 
+   done in a single step.
+
+2. **O(log n) - Logarithmic Time**
+   - **Description**: The time increases logarithmically as the input size increases.
+   - **Example**: Binary search in a sorted array.
+   - **Details**: With each step, the algorithm eliminates half of the remaining elements, 
+   resulting in a logarithmic growth.
+
+3. **O(n) - Linear Time**
+   - **Description**: The time increases linearly with the input size.
+   - **Example**: Iterating through all elements in an array.
+   - **Details**: If the input size doubles, the time taken also doubles.
+
+4. **O(n log n) - Linearithmic Time**
+   - **Description**: The time increases more than linearly but less than quadratically.
+   - **Example**: Efficient sorting algorithms like Merge Sort and Quick Sort.
+   - **Details**: This complexity often arises in algorithms that break the problem into smaller subproblems, 
+   solve them, and then combine the results.
+
+5. **O(n^2) - Quadratic Time**
+   - **Description**: The time increases quadratically with the input size.
+   - **Example**: Simple sorting algorithms like Bubble Sort and Selection Sort.
+   - **Details**: If the input size doubles, the time taken increases fourfold.
+
+6. **O(2^n) - Exponential Time**
+   - **Description**: The time doubles with each additional element in the input.
+   - **Example**: Solving the Tower of Hanoi puzzle.
+   - **Details**: Such algorithms become infeasible for even moderately large input sizes.
+
+### Space Complexity
+Space complexity measures the amount of memory an algorithm uses as a function of the size of its input (n).
+
+1. **O(1) - Constant Space**
+   - **Description**: The algorithm uses a fixed amount of memory regardless of the input size.
+   - **Example**: Swapping two variables.
+   - **Details**: The memory usage does not grow with the input size.
+
+2. **O(log n) - Logarithmic Space**
+   - **Description**: The memory usage grows logarithmically with the input size.
+   - **Example**: Recursive algorithms that divide the problem in half at each step, like binary search.
+   - **Details**: The memory used for the call stack grows logarithmically with the input size.
+
+3. **O(n) - Linear Space**
+   - **Description**: The memory usage grows linearly with the input size.
+   - **Example**: Storing a list of n elements.
+   - **Details**: If the input size doubles, the memory usage also doubles.
+
+4. **O(n^2) - Quadratic Space**
+   - **Description**: The memory usage grows quadratically with the input size.
+   - **Example**: Creating a 2D array (matrix) of size n x n.
+   - **Details**: If the input size doubles, the memory usage increases fourfold.
+
+### Examples in Java
+Here are some examples of Java code with their time and space complexities:
+
+1. **O(1) - Constant Time and Space**
+   ```java
+   int getElement(int[] array, int index) {
+       return array[index];
+   }
+   ```
+
+2. **O(n) - Linear Time and Space**
+   ```java
+   int sumArray(int[] array) {
+       int sum = 0;
+       for (int i = 0; i < array.length; i++) {
+           sum += array[i];
+       }
+       return sum;
+   }
+   ```
+
+3. **O(n^2) - Quadratic Time**
+   ```java
+   void bubbleSort(int[] array) {
+       int n = array.length;
+       for (int i = 0; i < n - 1; i++) {
+           for (int j = 0; j < n - i - 1; j++) {
+               if (array[j] > array[j + 1]) {
+                   int temp = array[j];
+                   array[j] = array[j + 1];
+                   array[j + 1] = temp;
+               }
+           }
+       }
+   }
+   ```
+
+4. **O(log n) - Logarithmic Time**
+   ```java
+   int binarySearch(int[] array, int target) {
+       int left = 0, right = array.length - 1;
+       while (left <= right) {
+           int mid = left + (right - left) / 2;
+           if (array[mid] == target) {
+               return mid;
+           }
+           if (array[mid] < target) {
+               left = mid + 1;
+           } else {
+               right = mid - 1;
+           }
+       }
+       return -1; // Target not found
+   }
+   ```
+
+### Conclusion
+Understanding these complexities helps you write more efficient code by choosing the right algorithms 
+and data structures for your problem. By considering both time and space complexity, you can ensure that 
+your code runs efficiently and uses memory effectively.
