@@ -12,18 +12,15 @@ public class tnsofrecurvsive {
 // - Look at the base case of the recursion.
 // - Determine the time complexity for the base case. Usually,
 // it’s O(1) because it often involves a simple return statement.
-
 // 2. **Identify the Recursive Case**:
 // - Look at how the function calls itself.
 // - Determine how many times the function calls itself and how the input size
 // decreases with each call.
-
 // 3. **Set Up a Recurrence Relation**:
 // - Write a recurrence relation that describes the time complexity of the
 // recursive calls.
 // - For example, if a function calls itself twice on half of the input,
 // the relation might look like \( T(n) = 2T(n/2) + O(1) \).
-
 // 4. **Solve the Recurrence Relation**:
 // - Solve the recurrence relation using methods like the Master Theorem,
 // recursion trees, or substitution.
