@@ -26,7 +26,7 @@ public class tnsofrecurvsive {
 // recursion trees, or substitution.
 // - The solution will give you the time complexity of the algorithm.
 
-// #### Example: Fibonacci Sequence
+// Example: Fibonacci Sequence
 
 // Here’s a simple recursive function to calculate the nth Fibonacci number:
 
