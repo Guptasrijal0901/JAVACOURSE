@@ -1,14 +1,15 @@
-public class recpowermodified {
+public class recpowermodified2 {
     public static int power2(int a, int n) {
         if (n == 0) {
             return 1;
         }
-        int halfpower = power2(a, n / 2) + power2(a, n / 2);
+        int halfpower = power2(a, n / 2);
+        int halfpowersq = halfpower * halfpower;
 
         if (n % 2 != 0) {
-            return a * halfpower;
+            return a * halfpowersq;
         }
-        return halfpower;
+        return halfpowersq;
     }
 
     public static void main(String[] args) {
@@ -17,4 +18,5 @@ public class recpowermodified {
         System.out.println(power2(a, n));
     }
 }
-// TC = O(2*logn) = O(n)
+// TC = o(n)
+// SC =
