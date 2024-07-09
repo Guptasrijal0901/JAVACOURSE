@@ -1,0 +1,51 @@
+Sure! Let's break it down into simpler steps:
+
+### What is Merge Sort?
+Merge Sort is a way to sort a list or array by breaking it down into smaller parts, 
+sorting those parts, and then putting them back together in order.
+
+### Steps of Merge Sort:
+
+1. **Divide**:
+   - Split the list into two smaller lists.
+
+2. **Conquer**:
+   - Keep splitting the lists until each list has only one element (a single element is already sorted).
+
+3. **Combine**:
+   - Merge the smaller sorted lists back together to form a larger sorted list.
+
+### Example:
+
+Imagine you have a list of numbers: `[38, 27, 43, 3, 9, 82, 10]`.
+
+1. **Divide**:
+   - Split into two lists: `[38, 27, 43]` and `[3, 9, 82, 10]`.
+
+2. **Keep Dividing**:
+   - `[38, 27, 43]` becomes `[38]` and `[27, 43]`, and then `[27, 43]` becomes `[27]` and `[43]`.
+   - `[3, 9, 82, 10]` becomes `[3, 9]` and `[82, 10]`, and 
+   then `[3, 9]` becomes `[3]` and `[9]`, and `[82, 10]` becomes `[82]` and `[10]`.
+
+3. **Conquer** (since single elements are already sorted):
+   - Now you have single-element lists: `[38]`, `[27]`, `[43]`, `[3]`, `[9]`, `[82]`, `[10]`.
+
+4. **Combine**:
+   - Start merging the single-element lists into sorted lists: 
+     - `[27]` and `[43]` merge to `[27, 43]`.
+     - `[3]` and `[9]` merge to `[3, 9]`.
+     - `[82]` and `[10]` merge to `[10, 82]`.
+   - Keep merging:
+     - `[38]` and `[27, 43]` merge to `[27, 38, 43]`.
+     - `[3, 9]` and `[10, 82]` merge to `[3, 9, 10, 82]`.
+   - Finally, merge the two large lists:
+     - `[27, 38, 43]` and `[3, 9, 10, 82]` merge to `[3, 9, 10, 27, 38, 43, 82]`.
+
+### Time Complexity (TC) and Space Complexity (SC):
+
+- **Time Complexity**: Merge Sort always takes \(O(n \log n)\) time to sort a list of \(n\) elements. 
+This is because it splits the list \(\log n\) times (the depth of the recursive calls) 
+and takes \(O(n)\) time to merge the split lists at each level.
+  
+- **Space Complexity**: Merge Sort requires \(O(n)\) additional space for the temporary arrays used during merging. 
+This is because it needs to store elements of both halves during the merge process.
