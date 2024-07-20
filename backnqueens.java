@@ -23,6 +23,7 @@ public class backnqueens {
         // base case
         if (row == board.length) {
             printBoard(board);
+            count++;
             return;
         }
         // column loop
@@ -46,6 +47,8 @@ public class backnqueens {
         }
     }
 
+    static int count = 0;
+
     public static void main(String[] args) {
         int n = 4;
         char board[][] = new char[n][n];
@@ -56,7 +59,7 @@ public class backnqueens {
             }
         }
         nQueens(board, 0);
-
+        System.out.println("Total ways to solve n quuens: " + count);
     }
 
 }
