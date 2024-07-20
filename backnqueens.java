@@ -60,3 +60,5 @@ public class backnqueens {
     }
 
 }
+// TC: O(n!)
+// recurence relation: time for 1 queen to place * T(n-1) + isSafe
