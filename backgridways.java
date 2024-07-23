@@ -3,6 +3,3 @@ public class backgridways {
 
     }
 }
-// bagwan padhai karni hai
-// nhi ho rahi
-// please please
