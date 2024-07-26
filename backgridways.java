@@ -17,3 +17,5 @@ public class backgridways {
         System.out.println(gridWays(0, 0, n, m));
     }
 }
+// TC: O(2*n+m)
+// SC: O()
