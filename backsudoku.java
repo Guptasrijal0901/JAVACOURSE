@@ -1,6 +1,10 @@
 public class backsudoku {
     public static boolean sudokuSolver(int sudoku[][], int row, int col) {
+        // base case
+        // recursion
+        for (int digit = 1; digit <= 9; digit++) {
 
+        }
     }
 
     public static void main(String[] args) {
