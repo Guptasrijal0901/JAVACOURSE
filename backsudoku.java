@@ -1,10 +1,31 @@
 public class backsudoku {
     public static boolean sudokuSolver(int sudoku[][], int row, int col) {
         // base case
-        // recursion
-        for (int digit = 1; digit <= 9; digit++) {
-
+        if (row == 9 && col == 9) {
+            return true;
+        } else if (row == 9) {
+            return false;
         }
+        // recursion
+        int nextRow = row, nextCol = col + 1;
+        if (col + 1 == 9) {
+            nextRow = row + 1;
+            nextCol = 0;
+        }
+        if (sudoku[row][col] != 0) {
+            return sudokuSolver(sudoku, nextRow, nextCol);
+        }
+        for (int digit = 1; digit <= 9; digit++) {
+            if (isSafe(sudoku, rol, col, digit)) {
+                sudoku[row][col] = digit;
+                if (sudokuSolver(sudoku, nextCol, nextCol)) {// solution exists
+                    return true;
+                }
+                sudoku[row][col] = 0;
+
+            }
+        }
+        return false;
     }
 
     public static void main(String[] args) {
