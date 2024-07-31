@@ -12,6 +12,7 @@ public class arraylistintro {
         list1.add(15);
         list1.add(17);
         list1.add(13);
+        list1.add(1, 5); // add element at index i TC: O(n) for this
         // tc: O(1)
         System.out.println("add " + list1);
         // get operation
@@ -31,5 +32,15 @@ public class arraylistintro {
         // contains element
         System.out.println("contains " + list1.contains(9));
         System.out.println("contains " + list1.contains(17));
+        // TC: O(n)
+
+        // size of AL
+        System.out.println("size of " + list1.size());
+
+        // print AL
+        for (int i = 0; i < list1.size(); i++) {
+            System.out.print(list1.get(i) + " ");
+        }
+        System.out.println();
     }
 }
