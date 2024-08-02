@@ -16,8 +16,10 @@ public class arraylistswap {
         list.add(2);
         list.add(0);
         System.out.println("Array: " + list);
+        int inx1 = 1;
+        int inx2 = 4;
         swap(inx1, inx2, list);
-        System.out.println("Array afetr swaping" + list);
+        System.out.println("Array after swaping" + list);
 
     }
 
