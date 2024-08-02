@@ -9,12 +9,14 @@ public class arraylistmaximum {
         list.add(6);
         list.add(2);
         list.add(0);
-
+        // O(n): TC
         int n = Integer.MIN_VALUE;
         for (int i = 0; i < list.size(); i++) {
-            if (list.get(i) > n) {
-                n = list.get(i);
-            }
+            // if (list.get(i) > n) {
+            // n = list.get(i);
+            // }
+
+            n = Math.max(n, list.get(i));
         }
         System.out.println("Max element is: " + n);
     }
