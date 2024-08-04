@@ -20,4 +20,6 @@ public class arraylistsort {
         // comparators - fnx logic kiss trag se sorting honi chahiye
         System.out.println("Desending order: " + list);
     }
+
+    
 }
