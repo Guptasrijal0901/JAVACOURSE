@@ -20,6 +20,7 @@ public class arraylistmultiD {
             for (int j = 0; j < currlist.size(); j++) {
                 System.out.print(currlist.get(j) + " ");
             }
+
             System.out.println();
         }
         System.out.println(mainList);
