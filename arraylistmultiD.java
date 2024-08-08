@@ -26,4 +26,7 @@ public class arraylistmultiD {
         System.out.println(mainList);
     }
 
+
+    
+
 }
