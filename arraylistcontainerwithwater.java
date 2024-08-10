@@ -14,6 +14,7 @@ public class arraylistcontainerwithwater {
         return maxWater;
     }
 
+    // TC: O(n^2)
     public static void main(String[] args) {
         ArrayList<Integer> height = new ArrayList<>();
         height.add(1);
