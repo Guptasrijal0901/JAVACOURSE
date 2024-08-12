@@ -39,3 +39,6 @@ public class arraylistmodifiedcontainerwithwater {
 
 // 2 pointer approach to solve this
 // kam height wale ko shift karenge
+
+
+//new day 
