@@ -11,6 +11,7 @@ public class Linkedlistintro {
 
     public static Node head;
     public static Node tail;
+    public static int size;
 
     // methods to
     // add: we can add at first or last
@@ -19,6 +20,7 @@ public class Linkedlistintro {
         // -create new node
         // empty linkedlist
         Node newNode = new Node(data);
+        size++;
         if (head == null) {
             head = tail = newNode;
             return;
@@ -36,6 +38,7 @@ public class Linkedlistintro {
     // -tail = newNode
     public void addLast(int data) {
         Node newNode = new Node(data);
+        size++;
         if (head == null) {
             head = tail = newNode;
             return;
@@ -65,6 +68,7 @@ public class Linkedlistintro {
             return;
         }
         Node newNode = new Node(data);
+        size++;
         Node temp = head;
         int i = 0;
         while (i < idx - 1) {
@@ -76,20 +80,45 @@ public class Linkedlistintro {
         temp.next = newNode;
     }
 
+    // remove first
+    public int removeFirst() {
+        // when their is no values present in LL
+        if (size == 0) {
+            System.out.println("LL is empty");
+            return Integer.MAX_VALUE;
+            // when head and tail is same
+        } else if (size == 1) {
+            int val = head.data;
+            head = tail = null;
+            size = 0;
+            return val;
+        }
+        int val = head.data;
+        head = head.next;
+        size--;
+        return val;
+        // size--;
+    }
+
+    // remove last
     // search
     public static void main(String[] args) {
         Linkedlistintro ll = new Linkedlistintro();
-        ll.print();
+        // ll.print();
         ll.addFirst(2);
-        ll.print();
+        // ll.print();
         ll.addFirst(1);
-        ll.print();
-        ll.addLast(3);
-        ll.print();
+        // ll.print();
         ll.addLast(4);
+        // ll.print();
+        ll.addLast(5);
+        // ll.print();
+        ll.addInmiddle(2, 3);
         ll.print();
-        ll.addInmiddle(2, 9);
+        System.out.println("Size of Linked list: " + ll.size);
+        ll.removeFirst();
         ll.print();
+        System.out.println("Size of Linked list: " + ll.size);
     }
 }
 // it is class of nodes which have object
