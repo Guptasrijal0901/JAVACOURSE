@@ -112,6 +112,7 @@ public class Linkedlistintro {
             return val;
         }
         // prev: i=size-2
+        Node prev = head;
         for (int i = 0; i < size - 2; i++) {
             prev = prev.next;
         }
@@ -120,7 +121,6 @@ public class Linkedlistintro {
         tail = prev;
         size--;
         return val;
-
     }
 
     // search
@@ -139,6 +139,9 @@ public class Linkedlistintro {
         ll.print();
         System.out.println("Size of Linked list: " + ll.size);
         ll.removeFirst();
+        ll.print();
+        System.out.println("Size of Linked list: " + ll.size);
+        ll.removeLast();
         ll.print();
         System.out.println("Size of Linked list: " + ll.size);
     }
