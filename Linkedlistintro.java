@@ -124,6 +124,18 @@ public class Linkedlistintro {
     }
 
     // search (iterative)
+    public int search(int key) {
+        Node temp = head;
+        int i = 0;
+        while (temp != null) {
+            if (temp.data == key) {
+                return i;
+            }
+            temp = temp.next;
+            i++;
+        }
+        return -1;
+    }
 
     public static void main(String[] args) {
         Linkedlistintro ll = new Linkedlistintro();
@@ -139,12 +151,14 @@ public class Linkedlistintro {
         ll.addInmiddle(2, 3);
         ll.print();
         System.out.println("Size of Linked list: " + ll.size);
-        ll.removeFirst();
-        ll.print();
-        System.out.println("Size of Linked list: " + ll.size);
-        ll.removeLast();
-        ll.print();
-        System.out.println("Size of Linked list: " + ll.size);
+        // ll.removeFirst();
+        // ll.print();
+        // System.out.println("Size of Linked list: " + ll.size);
+        // ll.removeLast();
+        // ll.print();
+        // System.out.println("Size of Linked list: " + ll.size);
+
+        System.out.println(ll.search(9));
     }
 }
 // it is class of nodes which have object
