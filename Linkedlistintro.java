@@ -123,7 +123,8 @@ public class Linkedlistintro {
         return val;
     }
 
-    // search
+    // search (iterative)
+
     public static void main(String[] args) {
         Linkedlistintro ll = new Linkedlistintro();
         // ll.print();
