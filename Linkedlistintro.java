@@ -140,7 +140,6 @@ public class Linkedlistintro {
     // search (recursive)
     public int searchRec(int key) {
         Node temp = head;
-
     }
 
     public static void main(String[] args) {
