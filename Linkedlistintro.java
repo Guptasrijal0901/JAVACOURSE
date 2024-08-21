@@ -138,15 +138,22 @@ public class Linkedlistintro {
     }
 
     // search (recursive)
-
     public int helper(Node head, int key) {
         if (head == null) {
             return -1;
         }
+        if (head.data == key) {
+            return 0;
+        }
+        int idx = helper(head.next, key);
+        if (idx == -1) {
+            return -1;
+        }
+        return idx + 1;
     }
 
     public int searchRec(int key) {
-        Node temp = head;
+        return helper(head, key);
     }
 
     public static void main(String[] args) {
@@ -170,7 +177,7 @@ public class Linkedlistintro {
         // ll.print();
         // System.out.println("Size of Linked list: " + ll.size);
 
-        System.out.println(ll.search(9));
+        System.out.println(ll.searchRec(9));
     }
 }
 // it is class of nodes which have object
