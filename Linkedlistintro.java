@@ -215,32 +215,86 @@ public class Linkedlistintro {
         return;
     }
 
+    // check if ll is a palindrome
+    // 1. find mid
+    // slow-fast rule
+    // slow = head se start hota hai-> +1 -> mid tk puchege
+    // fast = head se start hota hai-> +2 -> jb null tk puchega
+    public Node findMid(Node head) {
+        Node slow = head;
+        Node fast = head;
+        while (fast != null && slow != null) {
+            slow = slow.next; // +1
+            fast = fast.next.next; // +2
+        }
+        return slow; // slow is my middleNode
+    }
+
+    // 2nd half ko reverse karna hai
+    public boolean checkPalindrome() {
+        // base case
+        if (head == null || head.next != null) {
+            return true;
+        }
+        // step1- find mid
+        Node midNode = findMid(head);
+        // step2- reverse 2nd half
+        Node prev = null;
+        Node curr = midNode;
+        Node next;
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        Node right = prev;
+        Node left = head;
+        // step3- check left half nad right half
+        while (right != null) {
+            if (left.data != right.data) {
+                return false;
+            }
+            left = left.next;
+            right = right.next;
+        }
+        return true;
+    }
+
     public static void main(String[] args) {
         Linkedlistintro ll = new Linkedlistintro();
         // ll.print();
-        ll.addFirst(2);
+        // ll.addFirst(2);
         // ll.print();
-        ll.addFirst(1);
+        // ll.addFirst(1);
         // ll.print();
-        ll.addLast(4);
+        // ll.addLast(4);
         // ll.print();
-        ll.addLast(5);
+        // ll.addLast(5);
         // ll.print();
-        ll.addInmiddle(2, 3);
-        ll.print();
-        System.out.println("Size of Linked list: " + ll.size);
+        // ll.addInmiddle(2, 3);
+        // ll.print();
+        // System.out.println("Size of Linked list: " + ll.size);
         // ll.removeFirst();
         // ll.print();
         // System.out.println("Size of Linked list: " + ll.size);
         // ll.removeLast();
         // ll.print();
         // System.out.println("Size of Linked list: " + ll.size);
-
         // System.out.println(ll.searchRec(9));
         // ll.reverse();
         // ll.print();
-        ll.deleteNthfromEnd(3);
+        // ll.deleteNthfromEnd(3);
+        // ll.print();
+        // for palindrome
+        ll.addLast(1);
+        ll.addLast(2);
+        ll.addLast(2);
+        ll.addLast(1);
         ll.print();
+
+        System.out.println(ll.checkPalindrome());
+
     }
 }
 // it is class of nodes which have object
