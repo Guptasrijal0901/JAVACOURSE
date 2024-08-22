@@ -1,3 +1,5 @@
+import org.w3c.dom.Node;
+
 public class Linkedlistintro {
     public static class Node {
         int data;
@@ -174,23 +176,41 @@ public class Linkedlistintro {
     public void deleteNthfromEnd(int n) {
         // calculate size
         int sz = 0;
-        Node temp = head;
-        while (temp != null) {
+        Node temp = head; // uses a temporary node (temp) to traverse the list.
+        while (temp != null) { // The while loop iterates through the list until temp becomes null (end of the
+                               // list), incrementing sz on each step.
             temp = temp.next;
             sz++;
         }
-        if (n == sz) {
+        // corner case jab head ko hi delete karna hai
+        if (n == sz) { // If n is equal to sz, it means you want to delete the first node (the head)
+                       // from the list.
             head = head.next;
+            // n this case, the code simply sets head to head.next, effectively removing the
+            // first node from the list and returning immediately.
+            // Node prev (starting from head):
+            // prev is a variable of type Node that starts at the head of the linked list.
+            // head is the first node in the linked list, so prev initially points to this
+            // first node.
             return;
         }
         // sz-n tk jana
+        // If the node to delete is not the head, the code calculates the position of
+        // the node that comes just before the one we want to delete (iToFind = sz - n).
         int i = 0;
         int iToFind = sz - n;
+        // It initializes i to 0 and uses a node prev (starting from head) to traverse
+        // the list up to the iToFind position.
         Node prev = head;
+        // Once the while loop completes, prev is positioned at the node just before the
+        // one that needs to be deleted.
+        // The code then changes the next pointer of prev to skip over the node to be
+        // deleted, effectively removing it from the list.
         while (i < iToFind) {
             prev = prev.next;
             i++;
         }
+        // Finally, the method returns, and the linked list now has one fewer node
         prev.next = prev.next.next;
         return;
     }
@@ -217,7 +237,9 @@ public class Linkedlistintro {
         // System.out.println("Size of Linked list: " + ll.size);
 
         // System.out.println(ll.searchRec(9));
-        ll.reverse();
+        // ll.reverse();
+        // ll.print();
+        ll.deleteNthfromEnd(3);
         ll.print();
     }
 }
