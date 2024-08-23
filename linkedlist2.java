@@ -8,17 +8,17 @@ public class linkedlist2 {
 // is a technique used to detect cycles in a sequence, most commonly in a linked
 // list.
 
-// ### Concept:
+// Concept:
 // - **Cycle**: In a linked list, a cycle occurs when a node's pointer links
 // back to a previous node,
 // forming a loop in the list.
 
-// ### How the Algorithm Works:
+// How the Algorithm Works:
 // - The algorithm uses two pointers:
 // - **Tortoise**: This pointer moves one step at a time.
 // - **Hare**: This pointer moves two steps at a time.
 
-// ### Key Steps:
+// Key Steps:
 // 1. **Initialization**: Both pointers start at the beginning of the linked
 // list.
 // 2. **Movement**: The Tortoise moves slowly, advancing one node per step,
@@ -29,7 +29,7 @@ public class linkedlist2 {
 // - If the list contains a cycle, the Hare,
 // moving faster, will eventually catch up to the Tortoise within the cycle.
 
-// ### Conclusion:
+// Conclusion:
 // - If the Tortoise and Hare meet, it confirms that there is a cycle in the
 // list.
 // - If the Hare reaches the end without meeting the Tortoise, the list is
