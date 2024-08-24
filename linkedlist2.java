@@ -20,6 +20,7 @@ public class linkedlist2 {
 
 // Key Steps:
 // 1. **Initialization**: Both pointers start at the beginning of the linked
+
 // list.
 // 2. **Movement**: The Tortoise moves slowly, advancing one node per step,
 // while the Hare moves faster, advancing two nodes per step.
