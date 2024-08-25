@@ -15,7 +15,7 @@ public class linkedlist2 {
     public static Node tail;
     public static int size;
 
-    public static boolean isCycle() {
+    public static boolean isCycle() { // Floyd's Cycle-Finding Algorithm
         Node slow = head;
         Node fast = head;
 
@@ -29,6 +29,12 @@ public class linkedlist2 {
         return false; // cycle doesn't exist
     }
 
+    // remove a loop/cycle in a linkedlist
+    // detect cycle
+    // slow ko head bana do
+    // slow +1 and fast +1
+    // null banana
+
     public static void main(String[] args) {
         head = new Node(1);
         head.next = new Node(2);
@@ -40,13 +46,12 @@ public class linkedlist2 {
 }
 // Floyd's Cycle-Finding Algorithm, often called the "Tortoise and Hare"
 // algorithm,
-// is a technique used to detect cycles in a sequence, most commonly in a linked
-// list.
+// is a technique used to detect cycles in a sequence, most commonly in a
+// linkedlist.
 
 // Concept:
 // - **Cycle**: In a linked list, a cycle occurs when a node's pointer links
-// back to a previous node,
-// forming a loop in the list.
+// back to a previous node, forming a loop in the list.
 
 // How the Algorithm Works:
 // - The algorithm uses two pointers:
