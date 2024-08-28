@@ -13,7 +13,7 @@ indicating the end of the list.
 Types of Linked Lists:
 
 - Singly Linked List: Each node points only to the next node.
-- Doubly Linked List**: Each node has pointers to both the next and previous nodes, 
+- Doubly Linked List: Each node has pointers to both the next and previous nodes, 
 allowing bidirectional traversal.
 - Circular Linked List: The last node’s pointer refers back to the head, 
 forming a closed loop.

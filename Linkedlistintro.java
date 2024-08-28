@@ -30,8 +30,10 @@ public class Linkedlistintro {
 
         // -new node ko head banana
         newNode.next = head; // linking step
+        // jo new node banaye hai usse head ka next bana do
         // -head = new node
         head = newNode;
+        // aab new node ko head bana do
     }
 
     // remove
@@ -100,6 +102,7 @@ public class Linkedlistintro {
         size--;
         return val;
         // size--;
+        // garbage collector take the useless node
     }
 
     // remove lastLast()
