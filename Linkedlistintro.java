@@ -296,6 +296,10 @@ public class Linkedlistintro {
         ll.addLast(1);
         ll.print();
 
+
+
+
+        
         System.out.println(ll.checkPalindrome());
 
     }
