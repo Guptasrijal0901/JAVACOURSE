@@ -1,6 +1,7 @@
 import org.w3c.dom.Node;
 
 public class Linkedlistintro {
+
     public static class Node {
         int data;
         Node next;
@@ -296,10 +297,6 @@ public class Linkedlistintro {
         ll.addLast(1);
         ll.print();
 
-
-
-
-        
         System.out.println(ll.checkPalindrome());
 
     }
