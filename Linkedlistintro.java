@@ -265,6 +265,43 @@ public class Linkedlistintro {
         return true;
     }
 
+    public void zigZag() {
+        // find mid
+        Node slow = head;
+        Node fast = head.next;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        Node mid = slow;
+        // reverse 2nd half
+        Node curr = mid.next;
+        mid.next = null;
+        Node prev = null;
+        Node next;
+
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        Node left = head;
+        Node right = prev;
+        Node nextL, nextR; // for zig zag merge
+        // alternating merge
+        while (left != null && right != null) {
+            // 4 steps for zig-zag
+            nextL = left.next;
+            left.next = right;
+            nextR = right.next;
+            right.next = nextL;
+            // 2 steps for updation
+            left = nextL;
+            right = nextR;
+        }
+    }
+
     public static void main(String[] args) {
         Linkedlistintro ll = new Linkedlistintro();
         // ll.print();
@@ -291,14 +328,19 @@ public class Linkedlistintro {
         // ll.deleteNthfromEnd(3);
         // ll.print();
         // for palindrome
-        ll.addLast(1);
-        ll.addLast(2);
-        ll.addLast(2);
-        ll.addLast(1);
+        // ll.addLast(1);
+        // ll.addLast(2);
+        // ll.addLast(2);
+        // ll.addLast(1);
+        // System.out.println(ll.checkPalindrome());
+        ll.addFirst(1);
+        ll.addFirst(2);
+        ll.addFirst(3);
+        ll.addFirst(4);
+        ll.addFirst(5);
         ll.print();
-
-        System.out.println(ll.checkPalindrome());
-
+        ll.zigZag();
+        ll.print();
     }
 }
 // it is class of nodes which have object
