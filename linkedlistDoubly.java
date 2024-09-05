@@ -1,5 +1,7 @@
 import java.util.*;
 
+import org.w3c.dom.Node;
+
 public class linkedlistDoubly {
     public class Node {
         int data;
@@ -60,6 +62,26 @@ public class linkedlistDoubly {
         return val;
     }
 
+    public void reverseDll() {
+        Node curr = head;
+        Node prev = null;
+        Node next;
+
+        while (curr != null) {
+            next = curr.next;
+            // Swap next and prev pointers
+            curr.next = prev;
+            curr.prev = next;
+
+            // Move prev and curr one step forward
+
+            prev = curr;
+            curr = next;
+        }
+        // After the loop, prev will be the new head
+        head = prev;
+    }
+
     public static void main(String[] args) {
         linkedlistDoubly dll = new linkedlistDoubly();
         dll.addFirst(6);
@@ -69,11 +91,13 @@ public class linkedlistDoubly {
         dll.addFirst(2);
         dll.addFirst(1);
         dll.print();
-        System.out.println(dll.size);
+        // System.out.println(dll.size);
 
-        dll.removeFirst();
+        // dll.removeFirst();
+        // dll.print();
+        // System.out.println(dll.size);
+        dll.reverseDll();
         dll.print();
-        System.out.println(dll.size);
     }
 }
 // A doubly linked list in Java is a data structure where each element (called a
