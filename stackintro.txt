@@ -1,0 +1,39 @@
+In Java, a **stack** is a data structure that follows the **LIFO** 
+principle, which means **Last In, First Out**. This concept can be understood in two ways: 
+**implicit stacks** and **explicit stacks**. Let's break them down simply:
+
+### Implicit Stack:
+An **implicit stack** is something Java manages for you behind the scenes, 
+often used in recursion or backtracking. When you make recursive function calls, 
+Java automatically creates a stack of function calls and keeps track of them. 
+You, as a coder, don't need to create this stack yourself. Java does it implicitly.
+
+For example, in a backtracking algorithm, each recursive function call gets pushed onto this implicit stack. 
+When the function returns, it pops the last function call from the stack.
+
+### Explicit Stack:
+In an **explicit stack**, **you** are the one who creates and manages the stack. 
+You can use Java's `Stack` class, `ArrayList`, or `LinkedList` to implement a stack. 
+
+Here’s the difference:
+- **Implicit**: Java handles the stack behind the scenes (e.g., recursion).
+- **Explicit**: You create and manage the stack yourself.
+
+### LIFO (Last In, First Out):
+In a stack, the last element that you **push** (insert) is the first one that you **pop** (remove). 
+This is called the **LIFO** principle.
+
+### Stack Implementation Options:
+1. **Array (fixed size)**: You can implement a stack using an array, 
+but arrays have a fixed size. This means you need to decide the maximum size of the stack in advance.
+   
+2. **ArrayList (variable size)**: You can use an `ArrayList` to create a stack with variable size. 
+You push elements to the **top** of the `ArrayList`, and when needed, you pop elements from the top. 
+The `ArrayList` automatically grows as needed.
+   
+3. **LinkedList (variable size)**: Another way to implement a stack is using a `LinkedList`.
+A `LinkedList` allows you to add elements at the **head** and remove elements from the head easily.
+
+### Efficiency:
+- **ArrayList** and **LinkedList** are generally more efficient than arrays because they are dynamically sized,
+which means they grow as needed without you having to worry about the stack getting too full.
