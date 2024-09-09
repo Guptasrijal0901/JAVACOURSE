@@ -6,3 +6,4 @@ public class stackQ4 {
 // flipkart
 // microsoft
 // samsung
+// smhj nhi aaya
