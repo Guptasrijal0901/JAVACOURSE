@@ -3,3 +3,5 @@ public class stackNextGreater {
 
     }
 }
+// the next greater element of some element x in an array is the first greater
+// element that is to right of x in the smane array
