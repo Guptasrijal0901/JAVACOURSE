@@ -8,3 +8,4 @@ public class stackNextGreater {
 // its tough and required more time to understand
 // one more day
 // one more day no study
+// aaj toh bhut ganda hua
