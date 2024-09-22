@@ -3,3 +3,4 @@ public class stackDuplicatePara {
 
     }
 }
+// TC: O(n)
