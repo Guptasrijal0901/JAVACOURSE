@@ -3,28 +3,39 @@ public class queueIntro {
         static int arr[];
         static int size;
         static int rear;
+        static int front;
 
         Queue(int n) {
             arr = new int[n];
             size = n;
             rear = -1;
+            front = -1;
         }
 
+        // empty queue
         public static boolean isEmpty() {
-            return rear == -1;
+            return rear == -1 && front == -1;
+        }
+
+        // full queue
+        public static boolean isFull() {
+            return (rear + 1) % size == front;
         }
 
         // add O(1)
         public static void add(int data) {
-            if (rear == size - 1) {
+            if (isFull()) {
                 System.out.println("queue is full");
                 return;
             }
-            rear = rear + 1;
+            if (front == -1) {
+                front = 0;
+            }
+            rear = (rear + 1) % size;
             arr[rear] = data;
         }
 
-        // remove O(n)
+        // remove O(n) before now O(1)
         public static int remove() {
             if (isEmpty()) {
                 System.out.println("empty queue");
