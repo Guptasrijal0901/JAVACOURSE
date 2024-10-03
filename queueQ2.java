@@ -24,6 +24,8 @@ public class queueQ2 {
         }
 
         // remove
+
+        
         public static int remove() {
             if (isEmpty()) {
                 System.out.println("Queue is empty");
