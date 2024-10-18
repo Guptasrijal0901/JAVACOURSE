@@ -9,5 +9,11 @@ public class queueDequeue {
         System.out.println("hello");
         System.out.println("hello");
         System.out.println("hello");
+
+        System.out.println("hello");
+        System.out.println("hello");
+        System.out.println("hello");
+        System.out.println("hello");
+
     }
 }
