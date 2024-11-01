@@ -30,7 +30,5 @@ public class queueFromdequeue {
         System.out.println(q.remove());
         System.out.println(q.remove());
         System.out.println(q.remove());
-
-        System.out.println(q.remove());
     }
 }
