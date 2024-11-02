@@ -29,6 +29,5 @@ public class queueFromdequeue {
         System.out.println("peek: " + q.peek());
         System.out.println(q.remove());
         System.out.println(q.remove());
-        System.out.println(q.remove());
     }
 }
