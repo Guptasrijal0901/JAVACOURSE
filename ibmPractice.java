@@ -13,9 +13,18 @@ public class ibmPractice {
 
     }
 
+    public static void bubbleSort(int array[]) {
+        for (int i = 0; i < array.length - 1; i++) {
+            for (int j = 0; i < array.length - 1 - i; j++) {
+                if (array[i] > array[j + 1]) {
+                    // swapping
+                }
+            }
+        }
+    }
+
     public static void main(String[] args) {
-        int number[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
-        maxSubarray(number);
+
     }
 
 }
