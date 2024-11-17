@@ -5,10 +5,14 @@ public class greedyActivitySelection {
         int start[] = { 1, 3, 0, 5, 8, 5 };
         int end[] = { 2, 4, 6, 7, 9, 9 };
 
+        // sorting 
+        int activities 
+
         int maxAct = 0;
         ArrayList<Integer> ans = new ArrayList<>();
 
         // 1st activity
+        // TC: O(n)
         maxAct = 1;
         ans.add(0);
         int lastEnd = end[0];
