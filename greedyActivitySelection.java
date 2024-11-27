@@ -7,7 +7,6 @@ public class greedyActivitySelection {
 
         // sorting 
         int activities 
-
         int maxAct = 0;
         ArrayList<Integer> ans = new ArrayList<>();
 
