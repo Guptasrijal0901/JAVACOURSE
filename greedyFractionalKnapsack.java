@@ -17,7 +17,7 @@ public class greedyFractionalKnapsack {
         }
         // assending oredr sorting
         Arrays.sort(ratio, Comparator.comparingDouble(o -> o[1]));
-        // we need in desendinh order
+        // we need in desending order
 
         int capacity = w;
         int finalVal = 0;
