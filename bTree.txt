@@ -1,0 +1,22 @@
+Binary Tree
+- A hierarchical data structure where each node has at most **two child nodes**.
+- These two child nodes are referred to as the **left child** and **right child**.
+- It is widely used in algorithms and problems related to sorting, searching, and organizing hierarchical data.
+
+Levels in a Tree
+- Definition: The level of a node represents its distance from the root node.
+- Root node is always at **level 0**.
+- Child nodes of the root are at **level 1**, their children are at **level 2**, and so on.
+- It helps in visualizing the structure of the tree and is often used in traversal algorithms like **level-order traversal**.
+
+Depth of a Node
+- Definition: The depth of a node is the number of edges from the root to that specific node.
+- The root node has a depth of **0**, and the depth increases as you move down the tree.
+- **Depth = Level, so they are often interchangeable in meaning.
+
+Subtree
+- Definition: A subtree is any smaller tree that exists within a larger tree, starting from a specific node.
+- It includes the selected node and all its descendants.
+- For instance, in a tree, selecting a child node and treating it as the root forms a subtree.
+- Subtrees are useful in recursive algorithms and tree-related problem-solving.
+
