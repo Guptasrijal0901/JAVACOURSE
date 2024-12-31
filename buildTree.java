@@ -6,8 +6,8 @@ public class buildTree {
 
         Node(int data) {
             this.data = data;
-            this.leftNode = null;
-            this.rightNode = null;
+            this.left = null;
+            this.right = null;
         }
 
     }
@@ -16,7 +16,15 @@ public class buildTree {
         static int idx = -1;
 
         public static Node buildTree(int nodes[]) {
+            idx++;
+            if (nodes[idx] == -1) {
+                return null;
+            }
+            Node newNode = new Node(node[idx]);
+            newNode.left = buildTree(nodes);
+            newNode.right = buildTree(nodes);
 
+            return newNode;
         }
     }
 
