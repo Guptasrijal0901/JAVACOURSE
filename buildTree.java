@@ -1,3 +1,5 @@
+import java.security.PublicKey;
+
 import org.w3c.dom.Node;
 
 public class buildTree {
@@ -50,6 +52,17 @@ public class buildTree {
             System.out.print(root.data + " ");
             inorder(root.right);
         }
+
+        // POTORDER TRAVERSAL: LEFT-> RIGHT-> ROOT
+        // TC: O(n)
+        public static void postorder(Node root) {
+            if (root == null) {
+                return;
+            }
+            postorder(root.left);
+            postorder(root.right);
+            System.out.print(root.data + " ");
+        }
     }
 
     public static void main(String[] args) {
@@ -57,7 +70,8 @@ public class buildTree {
         BinaryTree tree = new BinaryTree();
         Node root = tree.buildTree(nodes);
         // System.out.println(root.data);
-        tree.inorder(root);
+        tree.postorder(root);
+        // tree.inorder(root);
     }
 }
 // TC: O(n)
