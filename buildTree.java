@@ -1,4 +1,6 @@
 import java.security.PublicKey;
+import java.util.LinkedList;
+import java.util.Queue;
 
 import org.w3c.dom.Node;
 
@@ -62,6 +64,37 @@ public class buildTree {
             postorder(root.left);
             postorder(root.right);
             System.out.print(root.data + " ");
+        }
+
+        // LEVEL ORDER TRAVERSAL
+        public static void levelOrder(Node root) {
+            if (root == null) {
+                return;
+            }
+            Queue<Node> q = new LinkedList<>();
+            q.add(root);
+            q.add(root);
+
+            while (!q.isEmpty()) {
+                Node currNode = q.remove();
+                if (currNode == null) {
+                    System.out.println();
+                    if (q.isEmpty()) {
+                        break;
+                    } else {
+                        q.add(null);
+                    }
+
+                } else {
+                    System.out.print(currNode.data + " ");
+                    if (currNode.left != null) {
+                        q.add(currNode.left);
+                    }
+                    if (currNode.right != null) {
+                        q.add(currNode.right);
+                    }
+                }
+            }
         }
     }
 
