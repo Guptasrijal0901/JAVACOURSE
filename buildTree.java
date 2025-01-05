@@ -72,8 +72,8 @@ public class buildTree {
                 return;
             }
             Queue<Node> q = new LinkedList<>();
-            q.add(root);
-            q.add(root);
+            q.add(root); // for element
+            q.add(null); // for next line
 
             while (!q.isEmpty()) {
                 Node currNode = q.remove();
@@ -103,8 +103,9 @@ public class buildTree {
         BinaryTree tree = new BinaryTree();
         Node root = tree.buildTree(nodes);
         // System.out.println(root.data);
-        tree.postorder(root);
+        // tree.postorder(root);
         // tree.inorder(root);
+        tree.levelOrder(root);
     }
 }
 // TC: O(n)
