@@ -1,1 +1,1 @@
-ll.head = mergeSort();
+*
