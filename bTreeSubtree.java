@@ -1,5 +1,4 @@
 import org.w3c.dom.Node;
-import java.utill.*;
 
 public class bTreeSubtree {
     static class Node {
@@ -15,15 +14,15 @@ public class bTreeSubtree {
     }
 
     public static boolean isIdentical(Node node, Node subRoot) {
-        if (node == null && subRoot == null || node.data != subRoot.data) {
+        if (node == null && subRoot == null) {
             return true;
         } else if (node == null || subRoot == null || node.data != subRoot.data) {
             return false;
         }
-        if (!isIdentical(node.left, subNode.left)) {
+        if (!isIdentical(node.left, subRoot.left)) {
             return false;
         }
-        if (!isIdentical(node.right, subNode.right)) {
+        if (!isIdentical(node.right, subRoot.right)) {
             return false;
         }
         return true;
@@ -53,6 +52,8 @@ public class bTreeSubtree {
         Node subRoot = new Node(2);
         subRoot.left = new Node(4);
         subRoot.right = new Node(5);
+
+        System.out.println(isSubtree(root, subRoot));
     }
 }
 // given the roots of two bimary tree root and subroot,
