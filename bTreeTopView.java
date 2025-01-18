@@ -24,6 +24,7 @@ public class bTreeTopView {
     }
 
     public static void topView(Node root) {
+        // level order traversal
         Queue<Info> q = new LinkedList<>();
         HashMap<Integer, Node> map = new HashMap<>();
 
