@@ -15,6 +15,6 @@ public class bTreeLCA {
     }
 
 }
-// APROACH: 
+// APROACH:
 // 1. root se number tk path calculate karna h
-// 2. loop se last common node nikal lo 
+// 2. loop se last common node nikal lo
