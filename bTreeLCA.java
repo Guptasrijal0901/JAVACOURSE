@@ -1,6 +1,37 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 import org.w3c.dom.Node;
 
 public class bTreeLCA {
+
+    public static boolean getPath(Node root, int n, ArrayList<Node> path) {
+        path.add(root);
+        if (root.data == n) {
+            return true;
+        }
+        boolean foundLeft = getPath(root.left, n, path);
+        boolean foundRight = getPath(root.right, n, path);
+    }
+
+    public static Node lca(Node root, int n1, int n2) {
+        ArrayList<Integer> path1 = new ArrayList<>();
+        ArrayList<Integer> path2 = new ArrayList<>();
+
+        getPath(root, n1, path1);
+        getPath(root, n2, path2);
+
+        // last common ancestor
+        for (int i = 0; i < path2.size() && path2.size(); i++) {
+            if (path1.get(i) != path2.get(i)) {
+                break;
+            }
+        }
+
+        // last equal node -> i-1th
+        Node lca = path1.get(i - 1);
+    }
+
     public static void main(String[] args) {
         Node root = new Node(1);
         root.left = new Node(2);
