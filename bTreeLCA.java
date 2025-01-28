@@ -49,7 +49,6 @@ public class bTreeLCA {
         }
 
         // last equal node -> i-1th
-
         Node lca = path1.get(i - 1);
         return lca;
     }
