@@ -21,7 +21,7 @@ public class Linkedlistintro {
 
     public void addFirst(int data) {
         // -create new node
-        // empty linkedlist
+        // empty l inkedlist
         Node newNode = new Node(data);
         size++;
         if (head == null) {
