@@ -72,7 +72,7 @@ public class bTreeMinDist {
 
         int n1 = 4, n2 = 6;
 
-        System.out.println(minDistance(root, n1, n2));
+        System.out.println("Minimum Distance: " + minDistance(root, n1, n2));
     }
 }
 // best approach to find this to find the LCA of that number each and find the
