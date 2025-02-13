@@ -42,7 +42,6 @@ public class bTreeKthAncestor {
         int n = 5, k = 2;
         KAncestor(root, n, k);
     }
-
 }
 // find my node
 // base case: root.data = node
