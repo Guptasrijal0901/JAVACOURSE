@@ -13,6 +13,9 @@ public class bTreeKthAncestor {
     }
 
     public static int KAncestor(Node root, int n, int k) {
+        if (root == null) {
+            return -1;
+        }
         if (root.data == n) {
             return 0;
         }
@@ -23,6 +26,7 @@ public class bTreeKthAncestor {
         if (leftDist == -1 && rightDist == -1) {
             return -1;
         }
+
         int max = Math.max(leftDist, rightDist);
         if (max + 1 == k) {
             System.out.println(root.data);
