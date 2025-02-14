@@ -44,5 +44,5 @@ public class bTreeKthAncestor {
     }
 }
 // find my node
-// base case: root.data = node
+// root.data = node return 0
 // valid value return
