@@ -1,1 +1,1 @@
-create database IF NOT EXISTS srijal
+create database IF NOT EXISTS 
