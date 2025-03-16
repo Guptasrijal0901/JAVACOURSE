@@ -1,1 +1,1 @@
-create database IF NOT EXISTS 
+create
