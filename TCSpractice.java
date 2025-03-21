@@ -11,10 +11,6 @@ public class TCSpractice {
     // }
     // return sum;
     // }
-    public static int unique(int arr[]) {
-
-        
-    }
 
     public static void main(String[] args) {
         // System.out.println(nSum(0, 3));
