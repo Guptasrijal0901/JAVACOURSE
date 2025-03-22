@@ -11,7 +11,6 @@ public class TCSpractice {
     // }
     // return sum;
     // }
-
     public static void main(String[] args) {
         // System.out.println(nSum(0, 3));
         int arr[] = { 1, 2, 6, 8, 7, 3, 2, 5, 2, 8, 5 };
