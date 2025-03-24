@@ -16,5 +16,4 @@ public class TCSpractice {
         int arr[] = { 1, 2, 6, 8, 7, 3, 2, 5, 2, 8, 5 };
         System.out.println(unique(arr));
     }
-
 }
