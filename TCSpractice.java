@@ -12,7 +12,7 @@ public class TCSpractice {
     // return sum;
     // }
     public static int prime(int n) {
-        if (n <= 0  || n = 1) {
+        if (n <= 0) {
             return 0;
         }
         for (int i = 1; i < n; i++) {
