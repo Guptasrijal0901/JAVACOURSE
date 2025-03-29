@@ -11,8 +11,8 @@ public class TCSpractice {
     // }
     // return sum;
     // }
-    public static int prime(int n) {
-        if (n <= 0) {
+    public static boolean prime() {
+        if (n < 2) {
             return 0;
         }
         for (int i = 1; i < n; i++) {
